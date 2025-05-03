@@ -1,0 +1,18 @@
+# GPU Training Node Configuration (Placeholder)
+
+# TODO: Specify GPU models and CUDA versions
+# TODO: Define memory and compute limits
+# TODO: Configure NVLink settings
+
+training_node:
+  version: 1.0
+  hardware:
+    gpus:
+      - model: "NVIDIA RTX 4090"
+        count: 4
+    memory: 128GB
+  software:
+    cuda: "12.2"
+    rust_cuda: "0.9"
+  networking:
+    interface: "10GbE"

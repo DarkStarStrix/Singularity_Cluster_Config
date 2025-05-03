@@ -1,0 +1,21 @@
+# AutoAPI Configuration (Placeholder)
+
+# TODO: Define workflow pipelines
+# TODO: Specify resource limits for GPU/CPU nodes
+# TODO: Configure logging and monitoring
+
+autoapi:
+  version: 1.0
+  orchestration:
+    host: "localhost"
+    port: 8080
+  workflows:
+    training:
+      enabled: true
+      priority: high
+    inference:
+      enabled: true
+      priority: medium
+  logging:
+    level: info
+    path: "/var/log/autoapi.log"

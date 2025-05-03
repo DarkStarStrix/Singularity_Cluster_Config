@@ -1,0 +1,19 @@
+# CPU Training Configuration (Placeholder)
+
+# TODO: Specify CPU models and core counts
+# TODO: Define preprocessing tasks
+# TODO: Configure parallel processing settings
+
+cpu_training:
+  version: 1.0
+  hardware:
+    cpu:
+      model: "AMD Ryzen Threadripper"
+      cores: 64
+    memory: 256GB
+  software:
+    framework: "Scikit-learn"
+    parallel: "MPI"
+  tasks:
+    - preprocessing
+    - classical_ml
